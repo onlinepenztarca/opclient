@@ -68,7 +68,7 @@ class OpClient {
 
 	public function createHeaders()
 	{
-		return ['opapisercret' => $this->clientSecret, "opapikey" => $this->clientId, 'Accept' => 'application/json'];
+		return ['opapisecret' => $this->clientSecret, "opapikey" => $this->clientId, 'Accept' => 'application/json'];
 	}
 
 }

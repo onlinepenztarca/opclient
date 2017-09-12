@@ -22,7 +22,7 @@ class Routes {
 		"order.isredeemed"          =>"/order/isredeemed",
 	];
 
-	const SERVER_URL = "http://45.32.154.255/api/v1";
+	const SERVER_URL = "https://www.onlinepenztarca.hu/api/v1";
 	
 	public static function getRoute($routeShortCut) {
 		
