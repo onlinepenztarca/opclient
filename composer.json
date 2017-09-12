@@ -1,5 +1,5 @@
 {
-    "name": "onlinepenztarca/opkliens",
+    "name": "onlinepenztarca/opclient",
     "description": "Onlinepenztarca kommunikacio",
     "version" : "1.0",
     "require": {
