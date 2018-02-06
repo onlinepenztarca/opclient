@@ -1,7 +1,7 @@
 {
     "name": "onlinepenztarca/opclient",
     "description": "Onlinepenztarca kommunikacio",
-    "version" : "1.0",
+    "version" : "1.1",
     "require": {
 		"guzzlehttp/guzzle": "~5.0"
 	},
@@ -10,6 +10,6 @@
 			"Onlinepenztarca\\Opkliens\\": "src"
         }
     },
-	"minimum-stability": "dev"
+	"minimum-stability": "stable"
 }
     

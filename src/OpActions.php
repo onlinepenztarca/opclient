@@ -181,6 +181,28 @@ class OpActions {
 		];
         return $this->opClient->get(Routes::getRoute("user.button"), $data);
 	}
+
+	public function cartAutomaticLite($user, $order, $cart=null, $valueOfOpCoins = null) {
+		$this->validation->validateUser($user);
+		$this->validation->validateArray($order, ['id', 'amount', 'time']);
+		if ($cart !== null && $cart !== false) {$this->validation->validateCart($cart);}
+		if ($cart == true) {$cart = null;}
+		$data = [
+			"user"				=> $user,
+			"order"				=> $order,
+			"cart"				=> $cart,
+			"valueOfOpCoins"	=> $valueOfOpCoins,
+		];
+        return $this->opClient->post(Routes::getRoute("transaction.create.lite"), $data);
+	}
+
+	public function getPayblock($userEmail) {
+		$this->validation->validate([$userEmail]);
+		$data = [
+			"userEmail" => $userEmail
+		];
+        return $this->opClient->get(Routes::getRoute("order.payblock"), $data);
+	}
 	
 	public function uploadData($data) {
 

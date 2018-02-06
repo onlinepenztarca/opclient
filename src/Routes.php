@@ -13,6 +13,7 @@ class Routes {
 		"user.history"              =>"/user/history",
         "user.button"               =>"/user/button",
 		"transaction.create"		=>"/trans/create",
+		"transaction.create.lite"	=>"/trans/create/lite",
 		"transaction.redeem"        =>"/trans/redeem",
 		"order.flush"               =>"/order/flush",
         "order.calc"                =>"/order/calc",
@@ -20,6 +21,7 @@ class Routes {
 		"order.update"              =>"/order/status/update",
 		"order.elements"            =>"/order/elements",
 		"order.isredeemed"          =>"/order/isredeemed",
+		"order.payblock"          	=>"/order/payblock",
 	];
 
 	const SERVER_URL = "https://www.onlinepenztarca.hu/api/v1";
