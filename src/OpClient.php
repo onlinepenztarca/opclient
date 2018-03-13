@@ -61,6 +61,17 @@ class OpClient {
 
 	}
 	
+	public function getBody($route,$data = null) {
+
+		$url = $this->createUrl($route);
+		$headers = $this->createHeaders();
+		$res = $this->guzzleClient->get($url, [
+		    'headers' => $headers,
+		    'query'   =>$data
+		]);
+		return $res->getBody();
+    	}
+	
 	public function createUrl($route) {
 		return sprintf("%s%s", Routes::SERVER_URL, $route);
 	}
