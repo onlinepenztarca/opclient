@@ -201,7 +201,7 @@ class OpActions {
 		$data = [
 			"userEmail" => $userEmail
 		];
-        return $this->opClient->get(Routes::getRoute("order.payblock"), $data);
+        return $this->opClient->getBody(Routes::getRoute("order.payblock"), $data);
 	}
 	
 	public function uploadData($data) {
