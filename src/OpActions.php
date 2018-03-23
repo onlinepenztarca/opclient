@@ -128,7 +128,7 @@ class OpActions {
 	 * https://www.onlinepenztarca.hu/dev/support#action11
 	 * */
 	public function calculateFunction($userEmail, $valueOfOpCoins, $orderAmount) {
-		$this->validation->validate([$valueOfOpCoins, $orderAmount]);
+		$this->validation->validate([$orderAmount]);
 		$this->validation->validateEmail($userEmail);
 		$data = [
 			"userEmail" 		=> $userEmail,
