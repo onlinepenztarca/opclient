@@ -29,7 +29,9 @@ class OpClient {
             'headers' => $headers, 
             'json' => ["body"=> $data],
         ]);
-        echo json_encode($data);
+        /*
+	Ha nem vagy biztos benne mit kapsz vissza
+	echo json_encode($data);*/
         return json_decode($res->getBody()->getContents());
 	}
 	
@@ -43,7 +45,6 @@ class OpClient {
             'query'   =>$data
         ]);
 		
-        
         return json_decode($res->getBody()->getContents());
 	}
 
@@ -56,7 +57,7 @@ class OpClient {
             'headers' => $headers,
             'json' => ["body"=> $data],
         ]);
-         echo json_encode($data);
+	 /*echo json_encode($data);*/
          echo $res->getBody()->getContents();
 
 	}
